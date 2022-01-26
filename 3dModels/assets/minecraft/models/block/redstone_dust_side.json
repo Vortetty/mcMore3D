@@ -1,159 +1,180 @@
 {
-	"credit": "Made with Blockbench",
-	"ambientocclusion": false,
-	"textures": {
-		"1": "block/redstone_dust_line0",
-		"particle": "block/redstone_dust_line0"
-	},
-	"elements": [
-		{
-			"name": "redstone_dust_line0_0",
-			"from": [8, 0, 0],
-			"to": [9, 1.35489, 1],
-			"faces": {
-				"north": {"uv": [8.968, 0.032, 8.032, 0.968], "texture": "#1", "tintindex": 0},
-				"east": {"uv": [8.032, 0.032, 8.968, 0.968], "rotation": 90, "texture": "#1", "tintindex": 0},
-				"south": {"uv": [8.032, 0.032, 8.968, 0.968], "texture": "#1", "tintindex": 0},
-				"west": {"uv": [8.032, 0.032, 8.968, 0.968], "rotation": 270, "texture": "#1", "tintindex": 0},
-				"up": {"uv": [8.032, 0.032, 8.968, 0.968], "texture": "#1", "tintindex": 0},
-				"down": {"uv": [8.032, 0.968, 8.968, 0.032], "texture": "#1", "tintindex": 0}
-			}
-		},
-		{
-			"name": "redstone_dust_line0_1",
-			"from": [8, 0, 2],
-			"to": [9, 1.43283, 3],
-			"faces": {
-				"north": {"uv": [8.968, 2.032, 8.032, 2.968], "texture": "#1", "tintindex": 0},
-				"east": {"uv": [8.032, 2.032, 8.968, 2.968], "rotation": 90, "texture": "#1", "tintindex": 0},
-				"south": {"uv": [8.032, 2.032, 8.968, 2.968], "texture": "#1", "tintindex": 0},
-				"west": {"uv": [8.032, 2.032, 8.968, 2.968], "rotation": 270, "texture": "#1", "tintindex": 0},
-				"up": {"uv": [8.032, 2.032, 8.968, 2.968], "texture": "#1", "tintindex": 0},
-				"down": {"uv": [8.032, 2.968, 8.968, 2.032], "texture": "#1", "tintindex": 0}
-			}
-		},
-		{
-			"name": "redstone_dust_line0_2",
-			"from": [7, 0, 3],
-			"to": [8, 0.52324, 4],
-			"faces": {
-				"north": {"uv": [7.968, 3.032, 7.032, 3.968], "texture": "#1", "tintindex": 0},
-				"east": {"uv": [7.032, 3.032, 7.968, 3.968], "rotation": 90, "texture": "#1", "tintindex": 0},
-				"south": {"uv": [7.032, 3.032, 7.968, 3.968], "texture": "#1", "tintindex": 0},
-				"west": {"uv": [7.032, 3.032, 7.968, 3.968], "rotation": 270, "texture": "#1", "tintindex": 0},
-				"up": {"uv": [7.032, 3.032, 7.968, 3.968], "texture": "#1", "tintindex": 0},
-				"down": {"uv": [7.032, 3.968, 7.968, 3.032], "texture": "#1", "tintindex": 0}
-			}
-		},
-		{
-			"name": "redstone_dust_line0_3",
-			"from": [8, 0, 3],
-			"to": [9, 0.70665, 4],
-			"faces": {
-				"north": {"uv": [8.968, 3.032, 8.032, 3.968], "texture": "#1", "tintindex": 0},
-				"east": {"uv": [8.032, 3.032, 8.968, 3.968], "rotation": 90, "texture": "#1", "tintindex": 0},
-				"south": {"uv": [8.032, 3.032, 8.968, 3.968], "texture": "#1", "tintindex": 0},
-				"west": {"uv": [8.032, 3.032, 8.968, 3.968], "rotation": 270, "texture": "#1", "tintindex": 0},
-				"up": {"uv": [8.032, 3.032, 8.968, 3.968], "texture": "#1", "tintindex": 0},
-				"down": {"uv": [8.032, 3.968, 8.968, 3.032], "texture": "#1", "tintindex": 0}
-			}
-		},
-		{
-			"name": "redstone_dust_line0_4",
-			"from": [7, 0, 4],
-			"to": [8, 0.98945, 5],
-			"faces": {
-				"north": {"uv": [7.968, 4.032, 7.032, 4.968], "texture": "#1", "tintindex": 0},
-				"east": {"uv": [7.032, 4.032, 7.968, 4.968], "rotation": 90, "texture": "#1", "tintindex": 0},
-				"south": {"uv": [7.032, 4.032, 7.968, 4.968], "texture": "#1", "tintindex": 0},
-				"west": {"uv": [7.032, 4.032, 7.968, 4.968], "rotation": 270, "texture": "#1", "tintindex": 0},
-				"up": {"uv": [7.032, 4.032, 7.968, 4.968], "texture": "#1", "tintindex": 0},
-				"down": {"uv": [7.032, 4.968, 7.968, 4.032], "texture": "#1", "tintindex": 0}
-			}
-		},
-		{
-			"name": "redstone_dust_line0_5",
-			"from": [9, 0, 4],
-			"to": [10, 1.48968, 5],
-			"faces": {
-				"north": {"uv": [9.968, 4.032, 9.032, 4.968], "texture": "#1", "tintindex": 0},
-				"east": {"uv": [9.032, 4.032, 9.968, 4.968], "rotation": 90, "texture": "#1", "tintindex": 0},
-				"south": {"uv": [9.032, 4.032, 9.968, 4.968], "texture": "#1", "tintindex": 0},
-				"west": {"uv": [9.032, 4.032, 9.968, 4.968], "rotation": 270, "texture": "#1", "tintindex": 0},
-				"up": {"uv": [9.032, 4.032, 9.968, 4.968], "texture": "#1", "tintindex": 0},
-				"down": {"uv": [9.032, 4.968, 9.968, 4.032], "texture": "#1", "tintindex": 0}
-			}
-		},
-		{
-			"name": "redstone_dust_line0_6",
-			"from": [9, 0, 5],
-			"to": [10, 0.9385, 6],
-			"faces": {
-				"north": {"uv": [9.968, 5.032, 9.032, 5.968], "texture": "#1", "tintindex": 0},
-				"east": {"uv": [9.032, 5.032, 9.968, 5.968], "rotation": 90, "texture": "#1", "tintindex": 0},
-				"south": {"uv": [9.032, 5.032, 9.968, 5.968], "texture": "#1", "tintindex": 0},
-				"west": {"uv": [9.032, 5.032, 9.968, 5.968], "rotation": 270, "texture": "#1", "tintindex": 0},
-				"up": {"uv": [9.032, 5.032, 9.968, 5.968], "texture": "#1", "tintindex": 0},
-				"down": {"uv": [9.032, 5.968, 9.968, 5.032], "texture": "#1", "tintindex": 0}
-			}
-		},
-		{
-			"name": "redstone_dust_line0_7",
-			"from": [8, 0, 6],
-			"to": [9, 1.2703, 7],
-			"faces": {
-				"north": {"uv": [8.968, 6.032, 8.032, 6.968], "texture": "#1", "tintindex": 0},
-				"east": {"uv": [8.032, 6.032, 8.968, 6.968], "rotation": 90, "texture": "#1", "tintindex": 0},
-				"south": {"uv": [8.032, 6.032, 8.968, 6.968], "texture": "#1", "tintindex": 0},
-				"west": {"uv": [8.032, 6.032, 8.968, 6.968], "rotation": 270, "texture": "#1", "tintindex": 0},
-				"up": {"uv": [8.032, 6.032, 8.968, 6.968], "texture": "#1", "tintindex": 0},
-				"down": {"uv": [8.032, 6.968, 8.968, 6.032], "texture": "#1", "tintindex": 0}
-			}
-		},
-		{
-			"name": "redstone_dust_line0_8",
-			"from": [9, 0, 6],
-			"to": [10, 1.11437, 7],
-			"faces": {
-				"north": {"uv": [9.968, 6.032, 9.032, 6.968], "texture": "#1", "tintindex": 0},
-				"east": {"uv": [9.032, 6.032, 9.968, 6.968], "rotation": 90, "texture": "#1", "tintindex": 0},
-				"south": {"uv": [9.032, 6.032, 9.968, 6.968], "texture": "#1", "tintindex": 0},
-				"west": {"uv": [9.032, 6.032, 9.968, 6.968], "rotation": 270, "texture": "#1", "tintindex": 0},
-				"up": {"uv": [9.032, 6.032, 9.968, 6.968], "texture": "#1", "tintindex": 0},
-				"down": {"uv": [9.032, 6.968, 9.968, 6.032], "texture": "#1", "tintindex": 0}
-			}
-		},
-		{
-			"name": "redstone_dust_line0_9",
-			"from": [7, 0, 7],
-			"to": [8, 1.04364, 8],
-			"faces": {
-				"north": {"uv": [7.968, 7.032, 7.032, 7.968], "texture": "#1", "tintindex": 0},
-				"east": {"uv": [7.032, 7.032, 7.968, 7.968], "rotation": 90, "texture": "#1", "tintindex": 0},
-				"south": {"uv": [7.032, 7.032, 7.968, 7.968], "texture": "#1", "tintindex": 0},
-				"west": {"uv": [7.032, 7.032, 7.968, 7.968], "rotation": 270, "texture": "#1", "tintindex": 0},
-				"up": {"uv": [7.032, 7.032, 7.968, 7.968], "texture": "#1", "tintindex": 0},
-				"down": {"uv": [7.032, 7.968, 7.968, 7.032], "texture": "#1", "tintindex": 0}
-			}
-		},
-		{
-			"from": [7, 0, 1],
-			"to": [8, 0.62213, 2],
-			"faces": {
-				"north": {"uv": [9.032, 4.032, 9.968, 4.968], "rotation": 180, "texture": "#1", "tintindex": 0},
-				"east": {"uv": [9.032, 4.032, 9.968, 4.968], "rotation": 90, "texture": "#1", "tintindex": 0},
-				"south": {"uv": [9.032, 4.032, 9.968, 4.968], "texture": "#1", "tintindex": 0},
-				"west": {"uv": [9.032, 4.032, 9.968, 4.968], "rotation": 270, "texture": "#1", "tintindex": 0},
-				"up": {"uv": [9.032, 4.032, 9.968, 4.968], "texture": "#1", "tintindex": 0},
-				"down": {"uv": [9.032, 4.032, 9.968, 4.968], "rotation": 180, "texture": "#1", "tintindex": 0}
-			}
-		}
-	],
-	"groups": [
-		{
-			"name": "redstone_dust_line0",
-			"origin": [8, 8, 8],
-			"children": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-		}
-	]
+    "credit": "Winter / Vortetty (Discord: T\u00e6mt mod\u0292i\u0279\u00e6#5020)",
+    "ambientocclusion": false,
+    "textures": {
+        "1": "block/redstone_dust_line0",
+        "particle": "block/redstone_dust_line0"
+    },
+    "elements": [
+        {
+            "name": "redstone_dust_line0_0",
+            "from": [8, 0, 0],
+            "to": [9, 1.35489, 1],
+            "faces": {
+                "north": {"uv": [8.968, 0.032, 8.032, 0.968], "texture": "#1", "tintindex": 0},
+                "east": {"uv": [8.032, 0.032, 8.968, 0.968], "rotation": 90, "texture": "#1", "tintindex": 0},
+                "south": {"uv": [8.032, 0.032, 8.968, 0.968], "texture": "#1", "tintindex": 0},
+                "west": {"uv": [8.032, 0.032, 8.968, 0.968], "rotation": 270, "texture": "#1", "tintindex": 0},
+                "up": {"uv": [8.032, 0.032, 8.968, 0.968], "texture": "#1", "tintindex": 0},
+                "down": {"uv": [8.032, 0.968, 8.968, 0.032], "texture": "#1", "tintindex": 0}
+            }
+        },
+        {
+            "name": "redstone_dust_line0_1",
+            "from": [8, 0, 2],
+            "to": [9, 1.43283, 3],
+            "faces": {
+                "north": {"uv": [8.968, 2.032, 8.032, 2.968], "texture": "#1", "tintindex": 0},
+                "east": {"uv": [8.032, 2.032, 8.968, 2.968], "rotation": 90, "texture": "#1", "tintindex": 0},
+                "south": {"uv": [8.032, 2.032, 8.968, 2.968], "texture": "#1", "tintindex": 0},
+                "west": {"uv": [8.032, 2.032, 8.968, 2.968], "rotation": 270, "texture": "#1", "tintindex": 0},
+                "up": {"uv": [8.032, 2.032, 8.968, 2.968], "texture": "#1", "tintindex": 0},
+                "down": {"uv": [8.032, 2.968, 8.968, 2.032], "texture": "#1", "tintindex": 0}
+            }
+        },
+        {
+            "name": "redstone_dust_line0_2",
+            "from": [7, 0, 3],
+            "to": [8, 0.52324, 4],
+            "faces": {
+                "north": {"uv": [7.968, 3.032, 7.032, 3.968], "texture": "#1", "tintindex": 0},
+                "east": {"uv": [7.032, 3.032, 7.968, 3.968], "rotation": 90, "texture": "#1", "tintindex": 0},
+                "south": {"uv": [7.032, 3.032, 7.968, 3.968], "texture": "#1", "tintindex": 0},
+                "west": {"uv": [7.032, 3.032, 7.968, 3.968], "rotation": 270, "texture": "#1", "tintindex": 0},
+                "up": {"uv": [7.032, 3.032, 7.968, 3.968], "texture": "#1", "tintindex": 0},
+                "down": {"uv": [7.032, 3.968, 7.968, 3.032], "texture": "#1", "tintindex": 0}
+            }
+        },
+        {
+            "name": "redstone_dust_line0_3",
+            "from": [8, 0, 3],
+            "to": [9, 0.70665, 4],
+            "faces": {
+                "north": {"uv": [8.968, 3.032, 8.032, 3.968], "texture": "#1", "tintindex": 0},
+                "east": {"uv": [8.032, 3.032, 8.968, 3.968], "rotation": 90, "texture": "#1", "tintindex": 0},
+                "south": {"uv": [8.032, 3.032, 8.968, 3.968], "texture": "#1", "tintindex": 0},
+                "west": {"uv": [8.032, 3.032, 8.968, 3.968], "rotation": 270, "texture": "#1", "tintindex": 0},
+                "up": {"uv": [8.032, 3.032, 8.968, 3.968], "texture": "#1", "tintindex": 0},
+                "down": {"uv": [8.032, 3.968, 8.968, 3.032], "texture": "#1", "tintindex": 0}
+            }
+        },
+        {
+            "name": "redstone_dust_line0_4",
+            "from": [7, 0, 4],
+            "to": [8, 0.98945, 5],
+            "faces": {
+                "north": {"uv": [7.968, 4.032, 7.032, 4.968], "texture": "#1", "tintindex": 0},
+                "east": {"uv": [7.032, 4.032, 7.968, 4.968], "rotation": 90, "texture": "#1", "tintindex": 0},
+                "south": {"uv": [7.032, 4.032, 7.968, 4.968], "texture": "#1", "tintindex": 0},
+                "west": {"uv": [7.032, 4.032, 7.968, 4.968], "rotation": 270, "texture": "#1", "tintindex": 0},
+                "up": {"uv": [7.032, 4.032, 7.968, 4.968], "texture": "#1", "tintindex": 0},
+                "down": {"uv": [7.032, 4.968, 7.968, 4.032], "texture": "#1", "tintindex": 0}
+            }
+        },
+        {
+            "name": "redstone_dust_line0_5",
+            "from": [9, 0, 4],
+            "to": [10, 1.48968, 5],
+            "faces": {
+                "north": {"uv": [9.968, 4.032, 9.032, 4.968], "texture": "#1", "tintindex": 0},
+                "east": {"uv": [9.032, 4.032, 9.968, 4.968], "rotation": 90, "texture": "#1", "tintindex": 0},
+                "south": {"uv": [9.032, 4.032, 9.968, 4.968], "texture": "#1", "tintindex": 0},
+                "west": {"uv": [9.032, 4.032, 9.968, 4.968], "rotation": 270, "texture": "#1", "tintindex": 0},
+                "up": {"uv": [9.032, 4.032, 9.968, 4.968], "texture": "#1", "tintindex": 0},
+                "down": {"uv": [9.032, 4.968, 9.968, 4.032], "texture": "#1", "tintindex": 0}
+            }
+        },
+        {
+            "name": "redstone_dust_line0_6",
+            "from": [9, 0, 5],
+            "to": [10, 0.9385, 6],
+            "faces": {
+                "north": {"uv": [9.968, 5.032, 9.032, 5.968], "texture": "#1", "tintindex": 0},
+                "east": {"uv": [9.032, 5.032, 9.968, 5.968], "rotation": 90, "texture": "#1", "tintindex": 0},
+                "south": {"uv": [9.032, 5.032, 9.968, 5.968], "texture": "#1", "tintindex": 0},
+                "west": {"uv": [9.032, 5.032, 9.968, 5.968], "rotation": 270, "texture": "#1", "tintindex": 0},
+                "up": {"uv": [9.032, 5.032, 9.968, 5.968], "texture": "#1", "tintindex": 0},
+                "down": {"uv": [9.032, 5.968, 9.968, 5.032], "texture": "#1", "tintindex": 0}
+            }
+        },
+        {
+            "name": "redstone_dust_line0_7",
+            "from": [8, 0, 6],
+            "to": [9, 1.2703, 7],
+            "faces": {
+                "north": {"uv": [8.968, 6.032, 8.032, 6.968], "texture": "#1", "tintindex": 0},
+                "east": {"uv": [8.032, 6.032, 8.968, 6.968], "rotation": 90, "texture": "#1", "tintindex": 0},
+                "south": {"uv": [8.032, 6.032, 8.968, 6.968], "texture": "#1", "tintindex": 0},
+                "west": {"uv": [8.032, 6.032, 8.968, 6.968], "rotation": 270, "texture": "#1", "tintindex": 0},
+                "up": {"uv": [8.032, 6.032, 8.968, 6.968], "texture": "#1", "tintindex": 0},
+                "down": {"uv": [8.032, 6.968, 8.968, 6.032], "texture": "#1", "tintindex": 0}
+            }
+        },
+        {
+            "name": "redstone_dust_line0_8",
+            "from": [9, 0, 6],
+            "to": [10, 1.11437, 7],
+            "faces": {
+                "north": {"uv": [9.968, 6.032, 9.032, 6.968], "texture": "#1", "tintindex": 0},
+                "east": {"uv": [9.032, 6.032, 9.968, 6.968], "rotation": 90, "texture": "#1", "tintindex": 0},
+                "south": {"uv": [9.032, 6.032, 9.968, 6.968], "texture": "#1", "tintindex": 0},
+                "west": {"uv": [9.032, 6.032, 9.968, 6.968], "rotation": 270, "texture": "#1", "tintindex": 0},
+                "up": {"uv": [9.032, 6.032, 9.968, 6.968], "texture": "#1", "tintindex": 0},
+                "down": {"uv": [9.032, 6.968, 9.968, 6.032], "texture": "#1", "tintindex": 0}
+            }
+        },
+        {
+            "name": "redstone_dust_line0_9",
+            "from": [7, 0, 7],
+            "to": [8, 1.04364, 8],
+            "faces": {
+                "north": {"uv": [7.968, 7.032, 7.032, 7.968], "texture": "#1", "tintindex": 0},
+                "east": {"uv": [7.032, 7.032, 7.968, 7.968], "rotation": 90, "texture": "#1", "tintindex": 0},
+                "south": {"uv": [7.032, 7.032, 7.968, 7.968], "texture": "#1", "tintindex": 0},
+                "west": {"uv": [7.032, 7.032, 7.968, 7.968], "rotation": 270, "texture": "#1", "tintindex": 0},
+                "up": {"uv": [7.032, 7.032, 7.968, 7.968], "texture": "#1", "tintindex": 0},
+                "down": {"uv": [7.032, 7.968, 7.968, 7.032], "texture": "#1", "tintindex": 0}
+            }
+        },
+        {
+            "from": [7, 0, 1],
+            "to": [8, 0.62213, 2],
+            "faces": {
+                "north": {"uv": [9.032, 4.032, 9.968, 4.968], "rotation": 180, "texture": "#1", "tintindex": 0},
+                "east": {"uv": [9.032, 4.032, 9.968, 4.968], "rotation": 90, "texture": "#1", "tintindex": 0},
+                "south": {"uv": [9.032, 4.032, 9.968, 4.968], "texture": "#1", "tintindex": 0},
+                "west": {"uv": [9.032, 4.032, 9.968, 4.968], "rotation": 270, "texture": "#1", "tintindex": 0},
+                "up": {"uv": [9.032, 4.032, 9.968, 4.968], "texture": "#1", "tintindex": 0},
+                "down": {"uv": [9.032, 4.032, 9.968, 4.968], "rotation": 180, "texture": "#1", "tintindex": 0}
+            }
+        }
+    ],
+    "groups": [
+        {
+            "name": "redstone_dust_line0",
+            "origin": [
+                8,
+                8,
+                8
+            ],
+            "children": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10
+            ]
+        }
+    ],
+    "license": {
+        "name": "apache-2.0",
+        "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
+    },
+    "copyright": "Copyright (c) 2022 T\u00e6mt mod\u0292i\u0279\u00e6 / Winter / Vortetty"
 }
