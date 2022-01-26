@@ -1,0 +1,8 @@
+# Ignore all files
+*
+
+# Don't ignore any files with the `3dModels` prefix
+!3dModels*
+
+# Don't ignore the gitignore file
+!.gitignore
