@@ -3,6 +3,8 @@
 
 # Don't ignore any files with the `3dModels` prefix
 !3dModels*
+!3dModels*/**
 
-# Don't ignore the gitignore file
+# Don't ignore these files
 !.gitignore
+LICENSE
