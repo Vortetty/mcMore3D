@@ -7,4 +7,5 @@
 
 # Don't ignore these files
 !.gitignore
-LICENSE
+!LICENSE
+!updateCredits+license.py
