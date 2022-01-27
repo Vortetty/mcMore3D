@@ -211,25 +211,46 @@ mergeDataInfo = {
     "copyright": f"Copyright (c) {datetime.now().year} Tæmt modʒiɹæ / Winter / Vortetty",
     "credit": "Winter / Vortetty (Discord: Tæmt modʒiɹæ#5020)"
 }
+print("Updating json files:")
 for i in glob.glob("./3dModels*/**/*.json", recursive=True):
-    with open(i, "r+") as f:
-        data = json.loads(f.read())
-        data.update(mergeDataInfo)
-        
-        for n,i in enumerate(data["elements"]):
-            for k,v in i.items():
-                if k == "faces":
-                    tmp = {}
-                    for k1,v1 in v.items():
-                        tmp[k1] = noIndent(v1)
-                    data["elements"][n][k] = tmp
-                else:
-                    data["elements"][n][k] = noIndent(v)
+    fileOpen = False
+    origData = {}
+    dataRightType = True
+    try:
+        with open(i, "r+") as f:
+            fileOpen = True
+            data = json.loads(f.read())
+            if not isinstance(data, dict):
+                dataRightType = False
+                raise TypeError("Data is not a dictionary")
+            origdata = dict(data)
+            data.update(mergeDataInfo)
+            
+            for n,ii in enumerate(data["elements"]):
+                for k,v in ii.items():
+                    if k == "faces":
+                        tmp = {}
+                        for k1,v1 in v.items():
+                            tmp[k1] = noIndent(v1)
+                        data["elements"][n][k] = tmp
+                    else:
+                        data["elements"][n][k] = noIndent(v)
                 
+            f.truncate(0)
+            f.seek(0)
+            f.write(json.dumps(data, indent=4))
         
-        f.truncate(0)
-        f.seek(0)
-        f.write(json.dumps(data, indent=4))
+        print(f"  Success: {i}")
+    except:
+        if fileOpen:
+            if dataRightType:
+                with open(i, "w") as f:
+                    f.write(json.dumps(origData, indent=4))
+                print(f"  Failure: \"{i}\", write failure")
+            else:
+                print(f"  Failure: \"{i}\", data is not a dictionary")
+        else:
+            print(f"  Failure: \"{i}\", file open failure")
         
 # Write itxt to images
 mergePngInfo = {
@@ -240,10 +261,24 @@ mergePngInfo = {
     "copyright": f"Copyright (c) {datetime.now().year} Tæmt modʒiɹæ / Winter / Vortetty",
     "credit": "Winter / Vortetty (Discord: Tæmt modʒiɹæ#5020)"
 }
+print("Updating png files:")
 for i in glob.glob("./3dModels*/**/*.png", recursive=True):
-    png: PngImageFile = PngImageFile(i)
-    png.info.update(mergePngInfo)
-    metadata = PngInfo()
-    for k,v in png.info.items():
-        metadata.add_itxt(k, str(v))
-    png.save(i, pnginfo=metadata)
+    oldpng: PngImageFile = None
+    pngLoaded = False
+    try:
+        png = PngImageFile(i)
+        oldpng = png.copy()
+        pngLoaded = True
+        png.info.update(mergePngInfo)
+        metadata = PngInfo()
+        for k,v in png.info.items():
+            if k not in ["icc_profile"]:
+                metadata.add_itxt(str(k), str(v))
+        png.save(i, pnginfo=metadata)
+        print(f"  Success: {i}")
+    except:
+        if pngLoaded:
+            oldpng.save(i)
+            print(f"  Failure: \"{i}\", write failure")
+        else:
+            print(f"  Failure: \"{i}\", file open failure")
