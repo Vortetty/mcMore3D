@@ -244,7 +244,5 @@ for i in glob.glob("./3dModels*/**/*.png", recursive=True):
     png: PngImageFile = PngImageFile(i)
     metadata = PngInfo()
     for k,v in mergePngInfo.items():
-        try:
-            metadata.add_itxt(k, str(v))
-        except: pass
+        metadata.add_itxt(k, str(v))
     png.save(i, pnginfo=metadata)
