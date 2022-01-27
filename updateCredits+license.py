@@ -231,7 +231,7 @@ for i in glob.glob("./3dModels*/**/*.json", recursive=True):
         f.seek(0)
         f.write(json.dumps(data, indent=4))
         
-        
+# Write itxt to images
 mergePngInfo = {
     "license": json.dumps({
         "name": "apache-2.0",
@@ -242,7 +242,8 @@ mergePngInfo = {
 }
 for i in glob.glob("./3dModels*/**/*.png", recursive=True):
     png: PngImageFile = PngImageFile(i)
+    png.info.update(mergePngInfo)
     metadata = PngInfo()
-    for k,v in mergePngInfo.items():
+    for k,v in png.info.items():
         metadata.add_itxt(k, str(v))
     png.save(i, pnginfo=metadata)
