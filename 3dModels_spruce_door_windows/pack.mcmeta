@@ -1,6 +1,12 @@
 {
-   "pack": {
-      "pack_format": 8,
-      "description": "Adds more 3d models!"
-   }
+    "pack": {
+        "pack_format": 8,
+        "description": "Adds more 3d models!"
+    },
+    "license": {
+        "name": "apache-2.0",
+        "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
+    },
+    "copyright": "Copyright (c) 2022 T\u00e6mt mod\u0292i\u0279\u00e6 / Winter / Vortetty",
+    "credit": "Winter / Vortetty (Discord: T\u00e6mt mod\u0292i\u0279\u00e6#5020)"
 }

@@ -212,11 +212,12 @@ mergeDataInfo = {
     "copyright": f"Copyright (c) {datetime.now().year} Tæmt modʒiɹæ / Winter / Vortetty",
     "credit": "Winter / Vortetty (Discord: Tæmt modʒiɹæ#5020)"
 }
-print("Updating json files:")
-for i in glob.glob("./3dModels*/**/*.json", recursive=True):
+print("Updating json(and mcmeta) files:")
+for i in glob.glob("./3dModels*/**/*.json", recursive=True) + glob.glob("./3dModels*/**/*.mcmeta", recursive=True):
     fileOpen = False
     origData = {}
     dataRightType = True
+    writing = False
     try:
         with open(i, "r+") as f:
             fileOpen = True
@@ -227,31 +228,36 @@ for i in glob.glob("./3dModels*/**/*.json", recursive=True):
             origdata = dict(data)
             data.update(mergeDataInfo)
             
-            for n,ii in enumerate(data["elements"]):
-                for k,v in ii.items():
-                    if k == "faces":
-                        tmp = {}
-                        for k1,v1 in v.items():
-                            tmp[k1] = noIndent(v1)
-                        data["elements"][n][k] = tmp
-                    else:
-                        data["elements"][n][k] = noIndent(v)
+            if "elements" in data.keys():
+                for n,ii in enumerate(data["elements"]):
+                    for k,v in ii.items():
+                        if k == "faces":
+                            tmp = {}
+                            for k1,v1 in v.items():
+                                tmp[k1] = noIndent(v1)
+                            data["elements"][n][k] = tmp
+                        else:
+                            data["elements"][n][k] = noIndent(v)
                 
+            writing = True
             f.truncate(0)
             f.seek(0)
             f.write(json.dumps(data, indent=4))
         
         print(f"  Success: {i}")
-    except:
+    except Exception as e:
         if fileOpen:
             if dataRightType:
-                with open(i, "w") as f:
-                    f.write(json.dumps(origData, indent=4))
-                print(f"  Failure: \"{i}\", write failure")
+                if writing:
+                    with open(i, "w") as f:
+                        f.write(json.dumps(origData, indent=4))
+                    print(f"  Failure: \"{i}\", write failure: ", e)
+                else:
+                    print(f"  Failure: \"{i}\", data formatting failure: ", e)
             else:
                 print(f"  Failure: \"{i}\", data is not a dictionary")
         else:
-            print(f"  Failure: \"{i}\", file open failure")
+            print(f"  Failure: \"{i}\", file open failure: ", e)
         
 # Write itxt to images
 mergePngInfo = {
@@ -277,9 +283,9 @@ for i in glob.glob("./3dModels*/**/*.png", recursive=True):
                 metadata.add_itxt(str(k), str(v))
         png.save(i, pnginfo=metadata)
         print(f"  Success: {i}")
-    except:
+    except Exception as e:
         if pngLoaded:
             oldpng.save(i)
-            print(f"  Failure: \"{i}\", write failure")
+            print(f"  Failure: \"{i}\", write failure: ", e)
         else:
-            print(f"  Failure: \"{i}\", file open failure")
+            print(f"  Failure: \"{i}\", file open failure: ", e)
