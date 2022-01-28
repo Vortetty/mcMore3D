@@ -2,13 +2,10 @@ import json
 import glob
 from datetime import datetime
 from PIL.PngImagePlugin import PngImageFile, PngInfo
-from typing import Any, Iterator
 import json
-from json import encoder
-import re
 
 class noIndent:
-    def __init__(self, value: Any):
+    def __init__(self, value):
         self.value = value
 
 #
