@@ -11,6 +11,10 @@ class noIndent:
     def __init__(self, value: Any):
         self.value = value
 
+#
+# Monkey patch the JSON encoder to not indent specific things specified with the noIndent class
+# noIndent class is added by the user
+#
 def _make_iterencode(markers, _default, _encoder, _indent, _floatstr,
         _key_separator, _item_separator, _sort_keys, _skipkeys, _one_shot,
         ## HACK: hand-optimized bytecode; turn globals into locals
